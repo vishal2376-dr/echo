@@ -8,6 +8,17 @@
 
 ---
 
+## 📸 Screenshots
+
+<img width="40%" alt="blocked" src="https://github.com/user-attachments/assets/bd56c570-ac40-4d07-9600-afa17c4d6469" /> | <img width="40%" alt="allowed" src="https://github.com/user-attachments/assets/f6278e58-4e00-401c-9251-55f157401ef4" /> |
+
+
+## 📸 Demo
+
+
+---
+
+
 ## 🚀 Features
 
 *   **🔍 Full Telemetry**: Comprehensive analysis of any domain.
@@ -49,15 +60,6 @@ Built with modern Android technologies:
     ```bash
     ./gradlew installDebug
     ```
-
----
-
-## 📸 Screenshots
-
-| Dashboard | Diagnostics |
-| :---: | :---: |
-| *Top Bar with animated stripe* | *Detailed status cards* |
-| *Minimal status indicators* | *Carbon-fiber style inputs* |
 
 ---
 
