@@ -1,60 +1,58 @@
 # 🏎️ ECHO: Network Telemetry
 
-> **"If you're not fast, you're last."** — *Network Diagnostics, Reimagined.*
+> **Network Diagnostics, Reimagined.**
 
-![Echo Banner](https://img.shields.io/badge/Status-Lights%20Out-E10600?style=for-the-badge) ![Kotlin](https://img.shields.io/badge/Kotlin-Jetpack%20Compose-1e1e2e?style=for-the-badge&logo=kotlin) ![License](https://img.shields.io/badge/License-MIT-gray?style=for-the-badge)
+![Echo Banner](https://img.shields.io/badge/Status-Active-E10600?style=for-the-badge) ![Kotlin](https://img.shields.io/badge/Kotlin-Jetpack%20Compose-1e1e2e?style=for-the-badge&logo=kotlin) ![License](https://img.shields.io/badge/License-MIT-gray?style=for-the-badge)
 
-**Echo** is a high-performance network diagnostic tool built for Android. It connects you to the grid, checking DNS, TCP, SSL, and HTTP metrics with millisecond precision. Draped in a custom **Catppuccin Mocha + F1 Red** livery, it looks as fast as it works.
+**Echo** is a high-performance network diagnostic tool built for Android. It connects you to any domain, checking DNS, TCP, SSL, and HTTP metrics with millisecond precision. Draped in a custom **Catppuccin Mocha + F1 Red** livery, it combines powerful diagnostics with a premium aesthetic.
 
 ---
 
-## 🏁 Pole Position (Features)
+## 🚀 Features
 
 *   **🔍 Full Telemetry**: Comprehensive analysis of any domain.
 *   **🏎️ F1-Inspired UI**: Deep black aesthetics with **Racing Red (#E10600)** accents.
-*   **🌐 DNS Sector Times**: Resolution time, IP classes, and blocking detection.
-*   **🔌 TCP Grip Check**: Port 443/80 connectivity and latency measurement.
-*   **🔒 SSL Safety Car**: Certificate validation, issuer checks, and MITM detection.
-*   **📡 HTTP DRS**: Response headers, status codes, and server info.
-*   **📊 Share Report**: Generate clean, developer-friendly text reports for your team.
+*   **🌐 DNS Analysis**: Resolution time, IP classes, and blocking detection.
+*   **🔌 TCP Connectivity**: Port 443/80 connectivity and latency measurement.
+*   **🔒 SSL Security**: Certificate validation, issuer checks, and MITM detection.
+*   **📡 HTTP Response**: Response headers, status codes, and server info.
+*   **📊 Share Report**: Generate clean, developer-friendly text reports.
 
 ---
 
-## 🛠️ Pit Crew (Tech Stack)
+## 🛠️ Tech Stack
 
-Built on the latest chassis:
-*   **Engine**: Kotlin + Jetpack Compose
-*   **Livery**: Catppuccin Mocha Theme (modified)
-*   **Telemetry**: Java Network APIs (`InetAddress`, `Socket`, `HttpsURLConnection`)
-*   **Comms**: Kotlin Coroutines & Flows
+Built with modern Android technologies:
+*   **Language**: Kotlin
+*   **UI**: Jetpack Compose
+*   **Theme**: Catppuccin Mocha + F1 Red
+*   **Networking**: Java Network APIs (`InetAddress`, `Socket`, `HttpsURLConnection`)
+*   **Concurrency**: Kotlin Coroutines & Flows
 *   **Architecture**: MVVM with Unidirectional Data Flow
 
 ---
 
-## 🚦 Lights Out (Getting Started)
+## ⚡ Getting Started
 
-1.  **Qualifying**:
-    Clone the repository to your local paddock.
+1.  **Clone the repository**:
     ```bash
     git clone https://github.com/your-username/echo.git
     cd echo
     ```
 
-2.  **Pit Stop**:
-    Build the project using Gradle.
+2.  **Build the project**:
     ```bash
     ./gradlew assembleDebug
     ```
 
-3.  **Race Day**:
-    Deploy to your device.
+3.  **Run on device**:
     ```bash
     ./gradlew installDebug
     ```
 
 ---
 
-## 📸 Race Highlights
+## 📸 Screenshots
 
 | Dashboard | Diagnostics |
 | :---: | :---: |
@@ -63,10 +61,8 @@ Built on the latest chassis:
 
 ---
 
-## 🏆 Podium
+## 🎨 Theme Design
 
-Designed with speed and aesthetics in mind.
+Designed with a focus on speed and clarity.
 *   **Base Theme**: Catppuccin Mocha
-*   **Accent**: F1 Racing Red
-
-> *Stay flat out.* 🏎️💨
+*   **Accent Color**: F1 Racing Red (`#E10600`)
