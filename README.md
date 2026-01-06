@@ -8,17 +8,9 @@
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots ([Demo Video](demo/demo.mp4))
 
 <img width="40%" alt="blocked" src="https://github.com/user-attachments/assets/bd56c570-ac40-4d07-9600-afa17c4d6469" /> | <img width="40%" alt="allowed" src="https://github.com/user-attachments/assets/f6278e58-4e00-401c-9251-55f157401ef4" /> |
-
-
-## 📸 Demo
-
-<div align="center">
-  <video src="demo/demo.mp4" width="40%" controls></video>
-</div>
-
 
 ---
 
