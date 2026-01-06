@@ -15,6 +15,10 @@
 
 ## 📸 Demo
 
+<div align="center">
+  <video src="demo/demo.mp4" width="40%" controls></video>
+</div>
+
 
 ---
 
