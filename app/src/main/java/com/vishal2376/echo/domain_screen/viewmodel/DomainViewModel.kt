@@ -46,7 +46,7 @@ class DomainViewModel : ViewModel() {
     val events = _events.asSharedFlow()
 
     private val blockedIpRegex = Regex(
-        "^(0\\.0\\.0\\.0|127\\.0\\.0\\.1|::1|" +
+        "^(127\\.0\\.0\\.1|::1|" +
                 "10\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}|" +
                 "172\\.(1[6-9]|2[0-9]|3[0-1])\\.\\d{1,3}\\.\\d{1,3}|" +
                 "192\\.168\\.\\d{1,3}\\.\\d{1,3})$"
@@ -324,7 +324,6 @@ class DomainViewModel : ViewModel() {
 
     private fun isBlockedIp(ipClass: IpClass): Boolean {
         return ipClass in listOf(
-            IpClass.NULL_IP,
             IpClass.LOCALHOST,
             IpClass.LOOPBACK,
             IpClass.PRIVATE_A,
