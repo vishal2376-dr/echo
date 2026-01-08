@@ -147,7 +147,21 @@ fun DomainScreen(
                                     viewModel.onAction(DomainActions.UpdateDomain("app-measurement.com"))
                                     viewModel.onAction(DomainActions.CheckDomain)
                                 },
-                                label = { Text("Firebase Analytics", color = CatppuccinMocha.Text) },
+                                label = { Text("Firebase (Prod)", color = CatppuccinMocha.Text) },
+                                colors = SuggestionChipDefaults.suggestionChipColors(
+                                    containerColor = CatppuccinMocha.Surface0
+                                ),
+                                border = BorderStroke(
+                                    width = 1.dp,
+                                    color = F1Accent.Primary.copy(alpha = 0.5f)
+                                )
+                            )
+                            SuggestionChip(
+                                onClick = {
+                                    viewModel.onAction(DomainActions.UpdateDomain("firebaselogging-pa.googleapis.com"))
+                                    viewModel.onAction(DomainActions.CheckDomain)
+                                },
+                                label = { Text("Firebase (Debug)", color = CatppuccinMocha.Text) },
                                 colors = SuggestionChipDefaults.suggestionChipColors(
                                     containerColor = CatppuccinMocha.Surface0
                                 ),
