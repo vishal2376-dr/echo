@@ -38,6 +38,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.SuggestionChip
+import androidx.compose.material3.SuggestionChipDefaults
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.vishal2376.echo.domain_screen.action.DomainActions
@@ -123,6 +128,50 @@ fun DomainScreen(
                         onDomainChange = { viewModel.onAction(DomainActions.UpdateDomain(it)) },
                         onCheckClick = { viewModel.onAction(DomainActions.CheckDomain) }
                     )
+
+                    // Quick Tracker Checks
+                    Column(modifier = Modifier.padding(horizontal = 4.dp)) {
+                        Text(
+                            text = "QUICK CHECK",
+                            style = MaterialTheme.typography.labelSmall,
+                            color = CatppuccinMocha.Overlay1,
+                            fontWeight = FontWeight.Bold,
+                            modifier = Modifier.padding(bottom = 8.dp, start = 4.dp)
+                        )
+                        Row(
+                            horizontalArrangement = Arrangement.spacedBy(8.dp),
+                            modifier = Modifier.horizontalScroll(rememberScrollState())
+                        ) {
+                            SuggestionChip(
+                                onClick = {
+                                    viewModel.onAction(DomainActions.UpdateDomain("app-measurement.com"))
+                                    viewModel.onAction(DomainActions.CheckDomain)
+                                },
+                                label = { Text("Firebase Analytics", color = CatppuccinMocha.Text) },
+                                colors = SuggestionChipDefaults.suggestionChipColors(
+                                    containerColor = CatppuccinMocha.Surface0
+                                ),
+                                border = BorderStroke(
+                                    width = 1.dp,
+                                    color = F1Accent.Primary.copy(alpha = 0.5f)
+                                )
+                            )
+                            SuggestionChip(
+                                onClick = {
+                                    viewModel.onAction(DomainActions.UpdateDomain("api.mixpanel.com"))
+                                    viewModel.onAction(DomainActions.CheckDomain)
+                                },
+                                label = { Text("Mixpanel API", color = CatppuccinMocha.Text) },
+                                colors = SuggestionChipDefaults.suggestionChipColors(
+                                    containerColor = CatppuccinMocha.Surface0
+                                ),
+                                border = BorderStroke(
+                                    width = 1.dp,
+                                    color = F1Accent.Primary.copy(alpha = 0.5f)
+                                )
+                            )
+                        }
+                    }
 
                     // Connection Status
                     AnimatedVisibility(
