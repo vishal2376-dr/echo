@@ -170,6 +170,34 @@ fun DomainScreen(
                                     color = F1Accent.Primary.copy(alpha = 0.5f)
                                 )
                             )
+                            SuggestionChip(
+                                onClick = {
+                                    viewModel.onAction(DomainActions.UpdateDomain("api.clevertap.com"))
+                                    viewModel.onAction(DomainActions.CheckDomain)
+                                },
+                                label = { Text("CleverTap API", color = CatppuccinMocha.Text) },
+                                colors = SuggestionChipDefaults.suggestionChipColors(
+                                    containerColor = CatppuccinMocha.Surface0
+                                ),
+                                border = BorderStroke(
+                                    width = 1.dp,
+                                    color = F1Accent.Primary.copy(alpha = 0.5f)
+                                )
+                            )
+                            SuggestionChip(
+                                onClick = {
+                                    viewModel.onAction(DomainActions.UpdateDomain("graph.facebook.com"))
+                                    viewModel.onAction(DomainActions.CheckDomain)
+                                },
+                                label = { Text("Facebook Graph", color = CatppuccinMocha.Text) },
+                                colors = SuggestionChipDefaults.suggestionChipColors(
+                                    containerColor = CatppuccinMocha.Surface0
+                                ),
+                                border = BorderStroke(
+                                    width = 1.dp,
+                                    color = F1Accent.Primary.copy(alpha = 0.5f)
+                                )
+                            )
                         }
                     }
 
